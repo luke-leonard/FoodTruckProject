@@ -8,8 +8,7 @@
 
   This data is then able to be accessed to find out which food trucks are resisted in the system, What the average rating is of all of the food trucks in the system, and it can display all the food trucks with the highest rating.
 
-  There is also a fair amount of text based prompts and error management.
-
+  There is also a fair amount of text based prompts and error management. 
 ### Concepts
 - Object Oriented Code
 - Static Serialization

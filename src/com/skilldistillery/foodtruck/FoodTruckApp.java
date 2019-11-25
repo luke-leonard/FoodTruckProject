@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 //Author: Luke Leonard
 
-
 public class FoodTruckApp {
 
 	// F I E L D S
@@ -12,7 +11,12 @@ public class FoodTruckApp {
 	private Scanner scanner;
 	private FoodTruck[] foodTrucks;
 	private int numberOfTrucks = 0;
-	boolean mustBeFull = false;
+	boolean mustBeFull = false;// This is sort of an unused feature that i made by accident, It allows you to
+								// require the user to enter an exact amount of trucks. I think i was unsure of
+								// what to do if the user "quits the program early" but have since not really
+								// had a use for it. I would remove it but it could be useful if I were to
+								// modify this code and it has maybe 2 CPU instructions associated with it Its
+								// staying put
 
 	// C O N S T R U C T O R S
 	public FoodTruckApp(int maxFoodTrucks) {
@@ -23,17 +27,13 @@ public class FoodTruckApp {
 	// M A I N
 
 	/*
-	 * main is pretty simple create a new foodTruck app which takes in a number of
-	 * food trucks(for our case, always 5
+	 * main is pretty simple create a new foodTruck application which takes in a
+	 * number of food trucks(for our case, always 5)
 	 * 
-	 * then set the setting which states that a user must enter exactly the maximum
-	 * number of trucks(to test putting in less food trucks, just set the value to
-	 * false, i did not think this was something to handle with user input)
 	 *
 	 */
 	public static void main(String[] args) {
 		FoodTruckApp app = new FoodTruckApp(5);
-		app.setMustBeFull(true);
 		app.run();
 		app.cleanUp();
 	}
@@ -47,10 +47,9 @@ public class FoodTruckApp {
 	 * truck and execute menu features
 	 * 
 	 * it also checks if the foodTrucks array must be full, I added this feature
-	 * because of a sort of ambiguous instruction in the assignment. It wanted the
-	 * code to quit if the user said quit before entering 5 trucks so my code is
-	 * easilly able to handle any number of trucks, however the app can be limited
-	 * to require an exact amount
+	 * because I was sort of confused if the menu should come up if the user quits
+	 * early. My code is easily able to handle any number of trucks, however the app
+	 * can be set so if the user types quit, the application quits
 	 * 
 	 */
 	public void run() {
@@ -256,7 +255,6 @@ public class FoodTruckApp {
 		if (numberOfTrucks == 1) {
 			return cleanedFoodTrucks;
 		}
-		FoodTruck swapTruck;
 		int numberOfHighest = 1;
 		int largestIndex = cleanedFoodTrucks.length - 1;
 
