@@ -2,6 +2,9 @@ package com.skilldistillery.foodtruck;
 
 import java.util.Scanner;
 
+//Author: Luke Leonard
+
+
 public class FoodTruckApp {
 
 	// F I E L D S

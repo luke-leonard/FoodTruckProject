@@ -1,5 +1,7 @@
 package com.skilldistillery.foodtruck;
 
+//Author: Luke Leonard
+
 public class FoodTruck {
 	
 	// F I E L D S
