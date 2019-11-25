@@ -22,6 +22,6 @@
 - OO
 
 ### Lessoned Learned
-I took this project as an opportunity to create a very robust command line interface. I tried to go above and beyond at writing efficient and sturdy code. I also wanted to go above and beyond. The code I wrote is very modular allowing for easy changes if necessary. I can change the number of trucks to take in, the fields a truck has and is prompted for, even the number of functions the menu can preform with maybe 3 extra lines of code for each.
+I took this project as an opportunity to create a very robust command line interface. I tried to go above and beyond at writing efficient and sturdy code. The code I wrote is very modular allowing for easy changes if necessary. I can change the number of trucks to take in, the fields a truck has and is prompted for, even the number of functions the menu can preform with maybe 3 extra lines of code for each.
 
-One of the challenges that this brought about was edge cases. If I force the user to enter 5 trucks each with a different rating, then the code could be very simple. I put the burden of usability on the user. If I want the usr to do whatever they want, and I check for user errors I have to put in a large amount of guards. This was grossly time consuming and I hope to find an easier way to do this in the future
+One of the challenges that this brought about was edge cases. If I force the user to enter 5 trucks each with a different rating, then the code could be very simple. I put the burden of usability on the user. If I want the user to do whatever they want, and I check for user errors I have to put in a large amount of guards. This was grossly time consuming and I hope to find an easier way to do this in the future.
